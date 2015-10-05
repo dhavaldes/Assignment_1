@@ -1,0 +1,42 @@
+<html>
+            <head>
+            <title> www.gmail.com</title>
+           </head>
+
+
+           <body bgcolor="lightblue">
+          <form method="post" action="url:www.gmail.com" name="login" onSubmit="return processForm()">
+
+          <FIELDSET>
+          <H1><B><FONT SIZE="20"><LEGEND> Welcome  Sign  In!!   </LEGEND></FONT></B></H1>
+
+          ENTER USERNAME:-
+        <input type="username"  type="text"  size="30"><br><br>
+         ENTER PASSWORD:-
+       <input type="password" name="password" size="30"/><br><br><br>
+       <input type="submit" value="log in" name="LogIn" size="40"/>
+
+         </FIELDSET>
+         </form>
+
+        <script language="JavaScript" type="text/JavaScript">
+
+        function processForm()
+       {
+            var chaeck=false;
+            myform=document.login;
+
+           if(myform.password.value=="1234" && myform.USERNAME.value=="1234")
+          {
+                  document.write("succesful login");
+                 check=true;
+          }
+         else
+         {
+                  alert("Wrong Username or password");
+                 myform.password.focus();
+         } return check;
+     }
+        </script>
+       </body>
+</html> 
