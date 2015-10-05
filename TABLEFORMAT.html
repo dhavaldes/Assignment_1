@@ -1,0 +1,28 @@
+<html>
+<head>
+</title> TABULAR FORMATE </title>
+</head>
+<body BGCOLOR="RED">
+<script type="text/javascript">
+
+var1=new Array(5);
+var2=new Array(5);
+for(i=0;i<5;i++)  
+{
+var1[i]=prompt("Enter Name:");
+var2[i]=prompt("Enter RollNo:");
+}
+
+document.write("<table align = 'center' width=20 border=1><tr align='center'><th> student name </th><th> student rollno </th></tr>");
+
+for(i=0;i<5;i++)
+{
+document.write("<tr align='center'><td>" + var1[i]+ "</td><td>" + var2[i] + " </td></tr>");
+}
+
+
+document.write("</table>");
+
+</script>
+</body>
+</html>
